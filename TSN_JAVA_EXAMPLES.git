@@ -1,0 +1,7 @@
+#!/bin/sh
+#
+git init
+git add .
+git commit -m "Add project"
+git remote add origin https://github.com/tsnsoft/TSN_JAVA_EXAMPLES.git
+git push -u origin master
