@@ -37,26 +37,26 @@ public class Form1 extends javax.swing.JFrame {
 
         jLabel1.setText("B");
         getContentPane().add(jLabel1);
-        jLabel1.setBounds(10, 50, 6, 14);
+        jLabel1.setBounds(10, 50, 20, 19);
 
         jLabel2.setText("D");
         getContentPane().add(jLabel2);
-        jLabel2.setBounds(10, 80, 7, 14);
+        jLabel2.setBounds(10, 80, 20, 19);
 
         jLabel3.setText("X");
         jLabel3.setToolTipText("");
         getContentPane().add(jLabel3);
-        jLabel3.setBounds(10, 20, 6, 14);
+        jLabel3.setBounds(10, 20, 20, 19);
         getContentPane().add(jTextField1);
-        jTextField1.setBounds(20, 20, 59, 20);
+        jTextField1.setBounds(40, 20, 59, 31);
         getContentPane().add(jTextField2);
-        jTextField2.setBounds(20, 50, 59, 20);
+        jTextField2.setBounds(40, 50, 59, 31);
         getContentPane().add(jTextField3);
-        jTextField3.setBounds(20, 80, 59, 20);
+        jTextField3.setBounds(40, 80, 59, 31);
 
         jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/tsn/javase/lab02/variant.jpg"))); // NOI18N
         getContentPane().add(jLabel4);
-        jLabel4.setBounds(90, 20, 380, 90);
+        jLabel4.setBounds(110, 20, 380, 90);
 
         jButton1.setText("Выход");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
@@ -65,7 +65,7 @@ public class Form1 extends javax.swing.JFrame {
             }
         });
         getContentPane().add(jButton1);
-        jButton1.setBounds(320, 120, 140, 30);
+        jButton1.setBounds(340, 120, 140, 30);
 
         jButton2.setText("Очистить");
         jButton2.addActionListener(new java.awt.event.ActionListener() {
@@ -74,7 +74,7 @@ public class Form1 extends javax.swing.JFrame {
             }
         });
         getContentPane().add(jButton2);
-        jButton2.setBounds(170, 120, 140, 30);
+        jButton2.setBounds(190, 120, 140, 30);
 
         jButton3.setText("Решить");
         jButton3.addActionListener(new java.awt.event.ActionListener() {
@@ -83,11 +83,11 @@ public class Form1 extends javax.swing.JFrame {
             }
         });
         getContentPane().add(jButton3);
-        jButton3.setBounds(10, 120, 150, 30);
+        jButton3.setBounds(30, 120, 150, 30);
 
         jLabel5.setText("ОТВЕТ:");
         getContentPane().add(jLabel5);
-        jLabel5.setBounds(10, 160, 450, 14);
+        jLabel5.setBounds(30, 160, 450, 19);
 
         jMenu1.setText("Решить");
         jMenu1.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -115,7 +115,7 @@ public class Form1 extends javax.swing.JFrame {
 
         setJMenuBar(jMenuBar1);
 
-        setSize(new java.awt.Dimension(487, 234));
+        setSize(new java.awt.Dimension(524, 234));
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 

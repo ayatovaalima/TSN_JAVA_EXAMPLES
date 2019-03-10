@@ -5,5 +5,12 @@
         <group>
             <file>file:/D:/Documents/student/My%20Documents/NetBeansProjects/TSN_SPRING_BEANS/src/kz/proffix4/spring/Launcher.java</file>
         </group>
+        <group name="TSN_JAVA_EXAMPLES">
+            <file>file:/home/proffix4/Development/my-projects/github/TSN_JAVA_EXAMPLES/TSN_SPRING_BEANS/src/kz/proffix4/spring/Launcher.java</file>
+            <file>file:/home/proffix4/Development/my-projects/github/TSN_JAVA_EXAMPLES/TSN_SPRING_BEANS/src/kz/proffix4/spring/Person.java</file>
+            <file>file:/home/proffix4/Development/my-projects/github/TSN_JAVA_EXAMPLES/TSN_SPRING_BEANS/src/kz/proffix4/spring/PersonDAO.java</file>
+            <file>file:/home/proffix4/Development/my-projects/github/TSN_JAVA_EXAMPLES/TSN_SPRING_BEANS/src/applicationContext.xml</file>
+            <file>file:/home/proffix4/Development/my-projects/github/TSN_JAVA_EXAMPLES/TSN_SPRING_BEANS/src/kz/proffix4/spring/PersonRowMapper.java</file>
+        </group>
     </open-files>
 </project-private>

@@ -64,11 +64,11 @@ public class Form1 extends javax.swing.JFrame {
 
         jLabel1.setText("Список именинников:");
         getContentPane().add(jLabel1);
-        jLabel1.setBounds(10, 10, 140, 14);
+        jLabel1.setBounds(10, 10, 240, 19);
 
         jLabel2.setText("Перечень благ:");
         getContentPane().add(jLabel2);
-        jLabel2.setBounds(340, 10, 120, 14);
+        jLabel2.setBounds(340, 10, 200, 19);
 
         jButton_Pazdr.setText("Поздравить");
         jButton_Pazdr.addActionListener(new java.awt.event.ActionListener() {
@@ -77,7 +77,7 @@ public class Form1 extends javax.swing.JFrame {
             }
         });
         getContentPane().add(jButton_Pazdr);
-        jButton_Pazdr.setBounds(610, 540, 120, 23);
+        jButton_Pazdr.setBounds(560, 540, 170, 33);
 
         jButton_Fam_Clear.setText("Очистка");
         jButton_Fam_Clear.addActionListener(new java.awt.event.ActionListener() {
@@ -86,7 +86,7 @@ public class Form1 extends javax.swing.JFrame {
             }
         });
         getContentPane().add(jButton_Fam_Clear);
-        jButton_Fam_Clear.setBounds(240, 220, 91, 23);
+        jButton_Fam_Clear.setBounds(191, 220, 140, 33);
 
         jButton_Gel_Clear.setText("Очистка");
         jButton_Gel_Clear.setToolTipText("");
@@ -96,7 +96,7 @@ public class Form1 extends javax.swing.JFrame {
             }
         });
         getContentPane().add(jButton_Gel_Clear);
-        jButton_Gel_Clear.setBounds(630, 220, 91, 23);
+        jButton_Gel_Clear.setBounds(591, 220, 130, 33);
 
         jEditorPane_Pozdr.setEditable(false);
         jEditorPane_Pozdr.setBackground(new java.awt.Color(255, 255, 153));

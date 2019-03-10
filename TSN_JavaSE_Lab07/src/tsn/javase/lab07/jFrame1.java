@@ -76,7 +76,7 @@ public class jFrame1 extends javax.swing.JFrame {
             }
         });
         jFrame2.getContentPane().add(jButton3);
-        jButton3.setBounds(10, 260, 135, 23);
+        jButton3.setBounds(10, 260, 135, 33);
 
         jButton4.setText("Вперед");
         jButton4.addActionListener(new java.awt.event.ActionListener() {
@@ -85,7 +85,7 @@ public class jFrame1 extends javax.swing.JFrame {
             }
         });
         jFrame2.getContentPane().add(jButton4);
-        jButton4.setBounds(200, 260, 135, 23);
+        jButton4.setBounds(200, 260, 135, 33);
 
         buttonGroup1.add(jRadioButton1);
         jRadioButton1.setSelected(true);
@@ -98,7 +98,7 @@ public class jFrame1 extends javax.swing.JFrame {
             }
         });
         jFrame2.getContentPane().add(jRadioButton1);
-        jRadioButton1.setBounds(14, 74, 93, 15);
+        jRadioButton1.setBounds(14, 74, 120, 19);
 
         buttonGroup1.add(jRadioButton2);
         jRadioButton2.setText("Рисовая");
@@ -109,7 +109,7 @@ public class jFrame1 extends javax.swing.JFrame {
             }
         });
         jFrame2.getContentPane().add(jRadioButton2);
-        jRadioButton2.setBounds(10, 100, 93, 23);
+        jRadioButton2.setBounds(10, 100, 140, 23);
 
         buttonGroup1.add(jRadioButton3);
         jRadioButton3.setText("Гороховая");
@@ -120,7 +120,7 @@ public class jFrame1 extends javax.swing.JFrame {
             }
         });
         jFrame2.getContentPane().add(jRadioButton3);
-        jRadioButton3.setBounds(10, 130, 93, 23);
+        jRadioButton3.setBounds(10, 130, 140, 23);
 
         buttonGroup1.add(jRadioButton4);
         jRadioButton4.setText("Гречневая");
@@ -131,12 +131,12 @@ public class jFrame1 extends javax.swing.JFrame {
             }
         });
         jFrame2.getContentPane().add(jRadioButton4);
-        jRadioButton4.setBounds(10, 160, 93, 20);
+        jRadioButton4.setBounds(10, 160, 150, 20);
 
         jLabel2.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         jLabel2.setText("Выберите любимую кашу:");
         jFrame2.getContentPane().add(jLabel2);
-        jLabel2.setBounds(10, 20, 210, 17);
+        jLabel2.setBounds(10, 20, 320, 17);
 
         jToolBar1.setFloatable(false);
         jToolBar1.setRollover(true);
@@ -174,7 +174,7 @@ public class jFrame1 extends javax.swing.JFrame {
             }
         });
         jFrame4.getContentPane().add(jButton5);
-        jButton5.setBounds(10, 260, 135, 23);
+        jButton5.setBounds(10, 260, 135, 33);
 
         jButton6.setText("Вперед");
         jButton6.addActionListener(new java.awt.event.ActionListener() {
@@ -183,7 +183,7 @@ public class jFrame1 extends javax.swing.JFrame {
             }
         });
         jFrame4.getContentPane().add(jButton6);
-        jButton6.setBounds(200, 260, 135, 23);
+        jButton6.setBounds(200, 260, 135, 33);
 
         jTable1.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
@@ -224,7 +224,9 @@ public class jFrame1 extends javax.swing.JFrame {
             }
         });
         jScrollPane1.setViewportView(jTable1);
-        jTable1.getColumnModel().getColumn(0).setResizable(false);
+        if (jTable1.getColumnModel().getColumnCount() > 0) {
+            jTable1.getColumnModel().getColumn(0).setResizable(false);
+        }
 
         jFrame4.getContentPane().add(jScrollPane1);
         jScrollPane1.setBounds(10, 80, 190, 140);
@@ -233,7 +235,7 @@ public class jFrame1 extends javax.swing.JFrame {
         jLabel4.setText("Какое у вас образование:");
         jLabel4.setToolTipText("");
         jFrame4.getContentPane().add(jLabel4);
-        jLabel4.setBounds(10, 20, 210, 17);
+        jLabel4.setBounds(10, 20, 310, 17);
 
         jToolBar3.setFloatable(false);
         jToolBar3.setRollover(true);
@@ -270,7 +272,7 @@ public class jFrame1 extends javax.swing.JFrame {
             }
         });
         jFrame3.getContentPane().add(jButton7);
-        jButton7.setBounds(10, 260, 135, 23);
+        jButton7.setBounds(10, 260, 135, 33);
 
         jButton8.setText("Вперед");
         jButton8.addActionListener(new java.awt.event.ActionListener() {
@@ -279,7 +281,7 @@ public class jFrame1 extends javax.swing.JFrame {
             }
         });
         jFrame3.getContentPane().add(jButton8);
-        jButton8.setBounds(200, 260, 135, 23);
+        jButton8.setBounds(200, 260, 135, 33);
 
         buttonGroup2.add(jCheckBox1);
         jCheckBox1.setSelected(true);
@@ -313,7 +315,7 @@ public class jFrame1 extends javax.swing.JFrame {
             }
         });
         jFrame3.getContentPane().add(jCheckBox3);
-        jCheckBox3.setBounds(10, 130, 150, 23);
+        jCheckBox3.setBounds(10, 130, 180, 23);
 
         buttonGroup2.add(jCheckBox4);
         jCheckBox4.setText("Неудовлетворительно");
@@ -324,12 +326,12 @@ public class jFrame1 extends javax.swing.JFrame {
             }
         });
         jFrame3.getContentPane().add(jCheckBox4);
-        jCheckBox4.setBounds(10, 160, 170, 23);
+        jCheckBox4.setBounds(10, 160, 190, 23);
 
         jLabel3.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         jLabel3.setText("Как вы учились в 5 классе:");
         jFrame3.getContentPane().add(jLabel3);
-        jLabel3.setBounds(10, 20, 210, 17);
+        jLabel3.setBounds(10, 20, 290, 17);
 
         jToolBar2.setFloatable(false);
         jToolBar2.setRollover(true);
@@ -369,7 +371,7 @@ public class jFrame1 extends javax.swing.JFrame {
             }
         });
         jFrame5.getContentPane().add(jButton9);
-        jButton9.setBounds(10, 260, 135, 23);
+        jButton9.setBounds(10, 260, 135, 33);
 
         jButton10.setText("ВЫХОД");
         jButton10.addActionListener(new java.awt.event.ActionListener() {
@@ -378,7 +380,7 @@ public class jFrame1 extends javax.swing.JFrame {
             }
         });
         jFrame5.getContentPane().add(jButton10);
-        jButton10.setBounds(200, 260, 135, 23);
+        jButton10.setBounds(250, 260, 135, 33);
 
         jTable2.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
@@ -407,11 +409,13 @@ public class jFrame1 extends javax.swing.JFrame {
         });
         jTable2.getTableHeader().setReorderingAllowed(false);
         jScrollPane2.setViewportView(jTable2);
-        jTable2.getColumnModel().getColumn(0).setResizable(false);
-        jTable2.getColumnModel().getColumn(1).setResizable(false);
+        if (jTable2.getColumnModel().getColumnCount() > 0) {
+            jTable2.getColumnModel().getColumn(0).setResizable(false);
+            jTable2.getColumnModel().getColumn(1).setResizable(false);
+        }
 
         jFrame5.getContentPane().add(jScrollPane2);
-        jScrollPane2.setBounds(10, 100, 325, 150);
+        jScrollPane2.setBounds(10, 100, 380, 150);
 
         jLabel5.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         jLabel5.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
@@ -444,7 +448,7 @@ public class jFrame1 extends javax.swing.JFrame {
             }
         });
         getContentPane().add(jButton1);
-        jButton1.setBounds(200, 260, 135, 23);
+        jButton1.setBounds(200, 260, 135, 33);
 
         jButton2.setText("ВЫХОД");
         jButton2.addActionListener(new java.awt.event.ActionListener() {
@@ -453,7 +457,7 @@ public class jFrame1 extends javax.swing.JFrame {
             }
         });
         getContentPane().add(jButton2);
-        jButton2.setBounds(10, 260, 135, 23);
+        jButton2.setBounds(10, 260, 135, 33);
 
         setSize(new java.awt.Dimension(357, 326));
         setLocationRelativeTo(null);

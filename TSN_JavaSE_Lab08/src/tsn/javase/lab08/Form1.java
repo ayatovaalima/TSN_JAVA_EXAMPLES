@@ -222,20 +222,19 @@ public class Form1 extends javax.swing.JFrame {
 
         jLabel2.setText("Точка начала движения");
         getContentPane().add(jLabel2);
-        jLabel2.setBounds(150, 530, 170, 14);
+        jLabel2.setBounds(120, 530, 200, 19);
 
         jLabel3.setText("Конечная точка движения");
         getContentPane().add(jLabel3);
-        jLabel3.setBounds(150, 570, 190, 14);
+        jLabel3.setBounds(110, 570, 210, 19);
 
         jSlider_Start.setMajorTickSpacing(1);
         jSlider_Start.setMaximum(6);
         jSlider_Start.setMinimum(1);
         jSlider_Start.setPaintLabels(true);
         jSlider_Start.setValue(1);
-        jSlider_Start.setOpaque(false);
         getContentPane().add(jSlider_Start);
-        jSlider_Start.setBounds(320, 525, 200, 39);
+        jSlider_Start.setBounds(320, 525, 360, 40);
 
         jSlider_Stop.setMajorTickSpacing(1);
         jSlider_Stop.setMaximum(7);
@@ -243,9 +242,8 @@ public class Form1 extends javax.swing.JFrame {
         jSlider_Stop.setPaintLabels(true);
         jSlider_Stop.setToolTipText("");
         jSlider_Stop.setValue(2);
-        jSlider_Stop.setOpaque(false);
         getContentPane().add(jSlider_Stop);
-        jSlider_Stop.setBounds(320, 565, 200, 40);
+        jSlider_Stop.setBounds(320, 565, 360, 40);
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/tsn/javase/lab08/bar.png"))); // NOI18N
         jLabel1.setText("jLabel1");

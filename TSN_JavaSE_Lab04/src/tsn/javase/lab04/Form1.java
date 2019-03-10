@@ -61,15 +61,17 @@ public class Form1 extends javax.swing.JFrame {
         });
         jTable1.getTableHeader().setReorderingAllowed(false);
         jScrollPane1.setViewportView(jTable1);
-        jTable1.getColumnModel().getColumn(0).setResizable(false);
-        jTable1.getColumnModel().getColumn(1).setResizable(false);
+        if (jTable1.getColumnModel().getColumnCount() > 0) {
+            jTable1.getColumnModel().getColumn(0).setResizable(false);
+            jTable1.getColumnModel().getColumn(1).setResizable(false);
+        }
 
         getContentPane().add(jScrollPane1);
         jScrollPane1.setBounds(0, 0, 140, 188);
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/tsn/javase/lab04/lab.png"))); // NOI18N
         getContentPane().add(jLabel1);
-        jLabel1.setBounds(140, 0, 284, 104);
+        jLabel1.setBounds(170, 10, 310, 104);
 
         jButton1.setText("Заполнить случайными");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
@@ -78,7 +80,7 @@ public class Form1 extends javax.swing.JFrame {
             }
         });
         getContentPane().add(jButton1);
-        jButton1.setBounds(151, 120, 160, 23);
+        jButton1.setBounds(151, 120, 200, 33);
 
         jButton2.setText("Выполнить задание");
         jButton2.addActionListener(new java.awt.event.ActionListener() {
@@ -87,7 +89,7 @@ public class Form1 extends javax.swing.JFrame {
             }
         });
         getContentPane().add(jButton2);
-        jButton2.setBounds(150, 150, 160, 23);
+        jButton2.setBounds(150, 160, 200, 33);
 
         jButton3.setText("Выход");
         jButton3.addActionListener(new java.awt.event.ActionListener() {
@@ -96,7 +98,7 @@ public class Form1 extends javax.swing.JFrame {
             }
         });
         getContentPane().add(jButton3);
-        jButton3.setBounds(320, 150, 90, 23);
+        jButton3.setBounds(370, 160, 110, 33);
 
         jButton4.setText("Очистка");
         jButton4.addActionListener(new java.awt.event.ActionListener() {
@@ -105,9 +107,9 @@ public class Form1 extends javax.swing.JFrame {
             }
         });
         getContentPane().add(jButton4);
-        jButton4.setBounds(320, 120, 90, 23);
+        jButton4.setBounds(370, 120, 110, 33);
 
-        setSize(new java.awt.Dimension(438, 225));
+        setSize(new java.awt.Dimension(494, 229));
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 

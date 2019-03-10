@@ -44,13 +44,14 @@ public class Form1 extends javax.swing.JFrame {
                 return types [columnIndex];
             }
         });
-        jTable1.setColumnSelectionAllowed(false);
         jTable1.setTableHeader(null);
         jScrollPane1.setViewportView(jTable1);
-        jTable1.getColumnModel().getColumn(0).setResizable(false);
-        jTable1.getColumnModel().getColumn(2).setResizable(false);
-        jTable1.getColumnModel().getColumn(3).setResizable(false);
-        jTable1.getColumnModel().getColumn(4).setResizable(false);
+        if (jTable1.getColumnModel().getColumnCount() > 0) {
+            jTable1.getColumnModel().getColumn(0).setResizable(false);
+            jTable1.getColumnModel().getColumn(2).setResizable(false);
+            jTable1.getColumnModel().getColumn(3).setResizable(false);
+            jTable1.getColumnModel().getColumn(4).setResizable(false);
+        }
 
         getContentPane().add(jScrollPane1);
         jScrollPane1.setBounds(0, 0, 250, 70);
@@ -62,7 +63,7 @@ public class Form1 extends javax.swing.JFrame {
             }
         });
         getContentPane().add(jButton1);
-        jButton1.setBounds(260, 10, 190, 23);
+        jButton1.setBounds(260, 0, 220, 33);
 
         jButton2.setText("Выполнить задание");
         jButton2.addActionListener(new java.awt.event.ActionListener() {
@@ -71,7 +72,7 @@ public class Form1 extends javax.swing.JFrame {
             }
         });
         getContentPane().add(jButton2);
-        jButton2.setBounds(260, 40, 190, 23);
+        jButton2.setBounds(260, 40, 220, 33);
 
         jLabel_MAX.setBackground(new java.awt.Color(255, 255, 255));
         jLabel_MAX.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
@@ -90,7 +91,7 @@ public class Form1 extends javax.swing.JFrame {
         getContentPane().add(jLabel1);
         jLabel1.setBounds(0, 80, 460, 90);
 
-        setSize(new java.awt.Dimension(465, 201));
+        setSize(new java.awt.Dimension(508, 201));
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
