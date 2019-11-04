@@ -78,13 +78,13 @@ public class ExcelChanges {
     }
 
     /**
-     * Запись данных в документ MS ExcelChanges
+     * Запись данных в документ MS Excel
      *
      * @param filename имя файла для записи
      */
     void writeData(String filename) {
-        HSSFWorkbook workbook = new HSSFWorkbook(); // Документ MS ExcelChanges
-        Sheet sheet = workbook.createSheet(); // Лист MS ExcelChanges
+        HSSFWorkbook workbook = new HSSFWorkbook(); // Документ MS Excel
+        Sheet sheet = workbook.createSheet(); // Лист MS Excel
         HSSFDataFormat df = workbook.createDataFormat(); // Формат ячейки
         HSSFCellStyle style = workbook.createCellStyle(); // Стиль ячейки
         style.setDataFormat(df.getFormat("0.000")); // Установка формата ячейки
