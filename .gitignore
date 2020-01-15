@@ -1,1 +1,11 @@
 build/*
+/JavaFX_MultiFormsPlus/build/
+/JavaFX_MultiFormsPlus/dist/
+/TSN_JAVA_POI_MSWORD/build/
+/TSN_JPA_HIBERNATE/build/
+/TSN_ODBC_MSACCESS/build/
+/TSN_ODBC_MSACCESS/dist/
+/TSN_ODBC_MSACCESS_LINUX/build/
+/TSN_JSP_SERVLET/build/
+/TSN_SPRING_BEANS/build/
+/TSN_SPRING_BEANS/dist/
