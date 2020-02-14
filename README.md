@@ -1,5 +1,5 @@
 # TSN_JAVA_EXAMPLES
-Авторские примеры Талипова С.Н. на Java
+Авторские примеры Талипова С.Н. на Java (базовый курс)
 
 Полная электронная версия для Android: https://play.google.com/store/apps/details?id=kz.proffix4.tsn.lectnb
 
