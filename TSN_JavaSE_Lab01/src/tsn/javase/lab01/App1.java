@@ -24,6 +24,7 @@ public class App1 {
             }
 
             System.out.format("Y=%.3f", y);
+            //System.out.print("Y="+y);
             System.out.println();
         } catch (Exception e) {
             System.out.println("Входные параметры заданы неверно!");
