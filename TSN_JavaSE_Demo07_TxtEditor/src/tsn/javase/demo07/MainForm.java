@@ -42,7 +42,7 @@ public class MainForm extends javax.swing.JFrame {
             }
         });
         getContentPane().add(jButton1);
-        jButton1.setBounds(240, 360, 110, 23);
+        jButton1.setBounds(240, 360, 110, 25);
 
         jButton3.setText("Сохранение в файл");
         jButton3.addActionListener(new java.awt.event.ActionListener() {
@@ -51,13 +51,13 @@ public class MainForm extends javax.swing.JFrame {
             }
         });
         getContentPane().add(jButton3);
-        jButton3.setBounds(400, 360, 170, 23);
+        jButton3.setBounds(400, 360, 190, 25);
 
         jEditorPane1.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jScrollPane1.setViewportView(jEditorPane1);
 
         getContentPane().add(jScrollPane1);
-        jScrollPane1.setBounds(10, 10, 560, 340);
+        jScrollPane1.setBounds(10, 10, 600, 340);
 
         jButton4.setText("Загрузить из файла");
         jButton4.addActionListener(new java.awt.event.ActionListener() {
@@ -66,9 +66,9 @@ public class MainForm extends javax.swing.JFrame {
             }
         });
         getContentPane().add(jButton4);
-        jButton4.setBounds(20, 360, 180, 23);
+        jButton4.setBounds(20, 360, 180, 25);
 
-        setSize(new java.awt.Dimension(586, 419));
+        setSize(new java.awt.Dimension(631, 433));
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 

@@ -94,8 +94,15 @@ public class ExporterJTable {
             pw.write("</body></html>");
             pw.flush();
             pw.close();
-            Desktop desk = Desktop.getDesktop();
-            desk.open(fname);
+
+            if (System.getProperty("os.name").equals("Linux")
+                    && System.getProperty("java.vendor").startsWith("Red Hat")) {
+                new ProcessBuilder("xdg-open", fname.toString()).start();
+            } else {
+                Desktop desk = Desktop.getDesktop();
+                desk.open(fname);
+            }
+
             fname.deleteOnExit();
         } catch (IOException ex) {
             fname.deleteOnExit();

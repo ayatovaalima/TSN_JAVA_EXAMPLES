@@ -76,7 +76,7 @@ public class jFrame1 extends javax.swing.JFrame {
             }
         });
         jFrame2.getContentPane().add(jButton3);
-        jButton3.setBounds(10, 260, 135, 33);
+        jButton3.setBounds(30, 260, 135, 25);
 
         jButton4.setText("Вперед");
         jButton4.addActionListener(new java.awt.event.ActionListener() {
@@ -85,7 +85,7 @@ public class jFrame1 extends javax.swing.JFrame {
             }
         });
         jFrame2.getContentPane().add(jButton4);
-        jButton4.setBounds(200, 260, 135, 33);
+        jButton4.setBounds(190, 260, 135, 25);
 
         buttonGroup1.add(jRadioButton1);
         jRadioButton1.setSelected(true);
@@ -174,7 +174,7 @@ public class jFrame1 extends javax.swing.JFrame {
             }
         });
         jFrame4.getContentPane().add(jButton5);
-        jButton5.setBounds(10, 260, 135, 33);
+        jButton5.setBounds(30, 260, 135, 25);
 
         jButton6.setText("Вперед");
         jButton6.addActionListener(new java.awt.event.ActionListener() {
@@ -183,7 +183,7 @@ public class jFrame1 extends javax.swing.JFrame {
             }
         });
         jFrame4.getContentPane().add(jButton6);
-        jButton6.setBounds(200, 260, 135, 33);
+        jButton6.setBounds(210, 260, 135, 25);
 
         jTable1.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
@@ -272,7 +272,7 @@ public class jFrame1 extends javax.swing.JFrame {
             }
         });
         jFrame3.getContentPane().add(jButton7);
-        jButton7.setBounds(10, 260, 135, 33);
+        jButton7.setBounds(30, 260, 135, 25);
 
         jButton8.setText("Вперед");
         jButton8.addActionListener(new java.awt.event.ActionListener() {
@@ -281,7 +281,7 @@ public class jFrame1 extends javax.swing.JFrame {
             }
         });
         jFrame3.getContentPane().add(jButton8);
-        jButton8.setBounds(200, 260, 135, 33);
+        jButton8.setBounds(200, 260, 135, 25);
 
         buttonGroup2.add(jCheckBox1);
         jCheckBox1.setSelected(true);
@@ -352,7 +352,7 @@ public class jFrame1 extends javax.swing.JFrame {
 
         jFrame5.setTitle("Результаты");
         jFrame5.setIconImage(java.awt.Toolkit.getDefaultToolkit().createImage(getClass().getResource("icon.png")));
-        jFrame5.setMinimumSize(new java.awt.Dimension(357, 326));
+        jFrame5.setMinimumSize(new java.awt.Dimension(450, 326));
         jFrame5.setResizable(false);
         jFrame5.addWindowListener(new java.awt.event.WindowAdapter() {
             public void windowActivated(java.awt.event.WindowEvent evt) {
@@ -371,7 +371,7 @@ public class jFrame1 extends javax.swing.JFrame {
             }
         });
         jFrame5.getContentPane().add(jButton9);
-        jButton9.setBounds(10, 260, 135, 33);
+        jButton9.setBounds(30, 260, 135, 25);
 
         jButton10.setText("ВЫХОД");
         jButton10.addActionListener(new java.awt.event.ActionListener() {
@@ -380,7 +380,7 @@ public class jFrame1 extends javax.swing.JFrame {
             }
         });
         jFrame5.getContentPane().add(jButton10);
-        jButton10.setBounds(250, 260, 135, 33);
+        jButton10.setBounds(260, 260, 135, 25);
 
         jTable2.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
@@ -415,14 +415,14 @@ public class jFrame1 extends javax.swing.JFrame {
         }
 
         jFrame5.getContentPane().add(jScrollPane2);
-        jScrollPane2.setBounds(10, 100, 380, 150);
+        jScrollPane2.setBounds(20, 100, 410, 150);
 
         jLabel5.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         jLabel5.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel5.setText("<html>\n<p align=\"center\">\nСпасибо что воспользовались\nнашей системой!\n</p>");
         jLabel5.setToolTipText("");
         jFrame5.getContentPane().add(jLabel5);
-        jLabel5.setBounds(60, 10, 250, 70);
+        jLabel5.setBounds(100, 10, 250, 70);
 
         jFrame5.setLocationRelativeTo(null);
 
@@ -437,9 +437,10 @@ public class jFrame1 extends javax.swing.JFrame {
         });
         getContentPane().setLayout(null);
 
-        jLabel1.setText("<html>\n<p align=\"center\">\n <h1>Вас приветствует система быстрого анкетирования!</h1>  <br> <br> <br> <h3><cite><p align=\"center\">Тема - Периоды жизни</cite></h3>\n</p> ");
+        jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel1.setText("<html>\n<p align=\"center\">\n <h1>    Вас приветствует система быстрого анкетирования!</h1>  <br> <br> <br> <h3><cite><p align=\"center\">Тема - Периоды жизни</cite></h3>\n</p> ");
         getContentPane().add(jLabel1);
-        jLabel1.setBounds(10, 0, 340, 190);
+        jLabel1.setBounds(20, 0, 330, 190);
 
         jButton1.setText("Начать");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
@@ -448,7 +449,7 @@ public class jFrame1 extends javax.swing.JFrame {
             }
         });
         getContentPane().add(jButton1);
-        jButton1.setBounds(200, 260, 135, 33);
+        jButton1.setBounds(200, 260, 135, 25);
 
         jButton2.setText("ВЫХОД");
         jButton2.addActionListener(new java.awt.event.ActionListener() {
@@ -457,9 +458,9 @@ public class jFrame1 extends javax.swing.JFrame {
             }
         });
         getContentPane().add(jButton2);
-        jButton2.setBounds(10, 260, 135, 33);
+        jButton2.setBounds(20, 260, 135, 25);
 
-        setSize(new java.awt.Dimension(357, 326));
+        setSize(new java.awt.Dimension(357, 338));
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 

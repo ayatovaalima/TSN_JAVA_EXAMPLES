@@ -80,7 +80,7 @@ public class Form1 extends javax.swing.JFrame {
             }
         });
         getContentPane().add(jButton1);
-        jButton1.setBounds(151, 120, 200, 33);
+        jButton1.setBounds(151, 120, 200, 25);
 
         jButton2.setText("Выполнить задание");
         jButton2.addActionListener(new java.awt.event.ActionListener() {
@@ -89,7 +89,7 @@ public class Form1 extends javax.swing.JFrame {
             }
         });
         getContentPane().add(jButton2);
-        jButton2.setBounds(150, 160, 200, 33);
+        jButton2.setBounds(150, 160, 200, 25);
 
         jButton3.setText("Выход");
         jButton3.addActionListener(new java.awt.event.ActionListener() {
@@ -98,7 +98,7 @@ public class Form1 extends javax.swing.JFrame {
             }
         });
         getContentPane().add(jButton3);
-        jButton3.setBounds(370, 160, 110, 33);
+        jButton3.setBounds(370, 160, 110, 25);
 
         jButton4.setText("Очистка");
         jButton4.addActionListener(new java.awt.event.ActionListener() {
@@ -107,9 +107,9 @@ public class Form1 extends javax.swing.JFrame {
             }
         });
         getContentPane().add(jButton4);
-        jButton4.setBounds(370, 120, 110, 33);
+        jButton4.setBounds(370, 120, 110, 25);
 
-        setSize(new java.awt.Dimension(494, 229));
+        setSize(new java.awt.Dimension(518, 234));
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 

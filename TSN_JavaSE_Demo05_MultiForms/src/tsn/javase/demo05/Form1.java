@@ -43,7 +43,7 @@ public class Form1 extends javax.swing.JFrame {
 
         jLabel2.setText("Выберите транспорт:");
         panel2.add(jLabel2);
-        jLabel2.setBounds(80, 10, 170, 14);
+        jLabel2.setBounds(80, 10, 170, 19);
 
         jButton2.setText("Назад");
         jButton2.addActionListener(new java.awt.event.ActionListener() {
@@ -52,7 +52,7 @@ public class Form1 extends javax.swing.JFrame {
             }
         });
         panel2.add(jButton2);
-        jButton2.setBounds(20, 80, 120, 23);
+        jButton2.setBounds(20, 80, 120, 25);
 
         jButton3.setText("Вперед");
         jButton3.addActionListener(new java.awt.event.ActionListener() {
@@ -61,13 +61,13 @@ public class Form1 extends javax.swing.JFrame {
             }
         });
         panel2.add(jButton3);
-        jButton3.setBounds(160, 80, 110, 23);
+        jButton3.setBounds(160, 80, 110, 25);
 
         jComboBox1.setBackground(new java.awt.Color(204, 255, 153));
         jComboBox1.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Автомобиль", "Поезд", "Самолет" }));
         jComboBox1.setBorder(new javax.swing.border.MatteBorder(null));
         panel2.add(jComboBox1);
-        jComboBox1.setBounds(60, 40, 170, 20);
+        jComboBox1.setBounds(60, 40, 170, 25);
 
         jFrame2.getContentPane().add(panel2);
         panel2.setBounds(0, 0, 290, 160);
@@ -109,7 +109,7 @@ public class Form1 extends javax.swing.JFrame {
             }
         });
         panel3.add(jButton4);
-        jButton4.setBounds(20, 140, 110, 23);
+        jButton4.setBounds(20, 140, 110, 25);
 
         jButton5.setText("Выход");
         jButton5.addActionListener(new java.awt.event.ActionListener() {
@@ -118,7 +118,7 @@ public class Form1 extends javax.swing.JFrame {
             }
         });
         panel3.add(jButton5);
-        jButton5.setBounds(140, 140, 90, 23);
+        jButton5.setBounds(140, 140, 90, 25);
 
         jFrame3.getContentPane().add(panel3);
         panel3.setBounds(0, 0, 260, 210);
@@ -151,11 +151,11 @@ public class Form1 extends javax.swing.JFrame {
             }
         });
         panel1.add(jButton1);
-        jButton1.setBounds(20, 160, 170, 23);
+        jButton1.setBounds(20, 160, 170, 25);
 
         jLabel1.setText("Выберите город:");
         panel1.add(jLabel1);
-        jLabel1.setBounds(40, 10, 120, 14);
+        jLabel1.setBounds(40, 10, 150, 19);
 
         getContentPane().add(panel1);
         panel1.setBounds(0, 0, 210, 200);

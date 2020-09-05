@@ -58,7 +58,7 @@ public class Form1 extends javax.swing.JFrame {
             }
         });
         jPanel1.add(jButton4);
-        jButton4.setBounds(350, 240, 120, 23);
+        jButton4.setBounds(350, 240, 120, 25);
 
         jSpinner1.addChangeListener(new javax.swing.event.ChangeListener() {
             public void stateChanged(javax.swing.event.ChangeEvent evt) {
@@ -66,7 +66,7 @@ public class Form1 extends javax.swing.JFrame {
             }
         });
         jPanel1.add(jSpinner1);
-        jSpinner1.setBounds(170, 80, 60, 20);
+        jSpinner1.setBounds(170, 80, 60, 25);
 
         jPasswordField1.setPreferredSize(new java.awt.Dimension(200, 20));
         jPasswordField1.addKeyListener(new java.awt.event.KeyAdapter() {
@@ -79,7 +79,7 @@ public class Form1 extends javax.swing.JFrame {
 
         jFormattedTextField1.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.NumberFormatter(new java.text.DecimalFormat("#0.00"))));
         jPanel1.add(jFormattedTextField1);
-        jFormattedTextField1.setBounds(80, 130, 150, 20);
+        jFormattedTextField1.setBounds(80, 130, 150, 25);
 
         jLabel2.setToolTipText("");
         jLabel2.setName(""); // NOI18N
@@ -88,15 +88,15 @@ public class Form1 extends javax.swing.JFrame {
 
         jLabel3.setText("Это jPassordField");
         jPanel1.add(jLabel3);
-        jLabel3.setBounds(70, 20, 150, 14);
+        jLabel3.setBounds(70, 20, 210, 19);
 
         jLabel4.setText("Это jSpinner");
         jPanel1.add(jLabel4);
-        jLabel4.setBounds(90, 80, 70, 14);
+        jLabel4.setBounds(10, 80, 150, 19);
 
         jLabel5.setText("Это jFormattedTextField (шаблон целые числа с 2 знаками после запятой)");
         jPanel1.add(jLabel5);
-        jLabel5.setBounds(80, 110, 400, 14);
+        jLabel5.setBounds(10, 110, 550, 19);
 
         jTabbedPane1.addTab("Вкладка 1", jPanel1);
 
@@ -119,16 +119,16 @@ public class Form1 extends javax.swing.JFrame {
         jScrollPane1.setViewportView(jList1);
 
         jPanel3.add(jScrollPane1);
-        jScrollPane1.setBounds(160, 70, 220, 130);
+        jScrollPane1.setBounds(160, 70, 220, 170);
 
         jLabel6.setText("А это просто список...");
         jPanel3.add(jLabel6);
-        jLabel6.setBounds(170, 50, 170, 14);
+        jLabel6.setBounds(170, 50, 210, 19);
 
         jTabbedPane1.addTab("Вкладка 3", jPanel3);
 
         getContentPane().add(jTabbedPane1);
-        jTabbedPane1.setBounds(20, 10, 540, 330);
+        jTabbedPane1.setBounds(20, 10, 570, 330);
 
         jMenu2.setText("Файл");
 
@@ -162,7 +162,7 @@ public class Form1 extends javax.swing.JFrame {
 
         setJMenuBar(jMenuBar1);
 
-        setSize(new java.awt.Dimension(579, 402));
+        setSize(new java.awt.Dimension(615, 402));
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 

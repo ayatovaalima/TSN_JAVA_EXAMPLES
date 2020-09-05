@@ -153,7 +153,7 @@ public class Form1 extends javax.swing.JFrame {
         // Проверка количества поздравлений
         if (fam.size() > pozdr.size()) { // Если фамилий больше чем поздравлений
             JOptionPane.showMessageDialog(rootPane, 
-                    "Пожеланий на всех не хватит! Уменьшите количество фамилий.", 
+                    "Пожеланий на всех не хватит!", 
                     "Ошибка ввода", JOptionPane.ERROR_MESSAGE);
             return;
         }

@@ -28,13 +28,13 @@ public class Form1 extends javax.swing.JFrame {
         jPanel5 = new javax.swing.JPanel();
         jComboBox2 = new javax.swing.JComboBox();
         jTextField1 = new javax.swing.JTextField();
-        jScrollBar1 = new javax.swing.JScrollBar();
-        jLabel2 = new javax.swing.JLabel();
         jPanel1 = new javax.swing.JPanel();
         jProgressBar1 = new javax.swing.JProgressBar();
         jSlider1 = new javax.swing.JSlider();
         jLabel3 = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
+        jLabel2 = new javax.swing.JLabel();
+        jScrollBar1 = new javax.swing.JScrollBar();
         jScrollPane2 = new javax.swing.JScrollPane();
         jTextArea1 = new javax.swing.JTextArea();
         jButton1 = new javax.swing.JButton();
@@ -54,7 +54,7 @@ public class Form1 extends javax.swing.JFrame {
             }
         });
         getContentPane().add(jCheckBox3);
-        jCheckBox3.setBounds(200, 70, 120, 23);
+        jCheckBox3.setBounds(200, 70, 160, 23);
 
         jCheckBox2.setText("Ноутбук");
         jCheckBox2.addActionListener(new java.awt.event.ActionListener() {
@@ -63,7 +63,7 @@ public class Form1 extends javax.swing.JFrame {
             }
         });
         getContentPane().add(jCheckBox2);
-        jCheckBox2.setBounds(200, 50, 69, 23);
+        jCheckBox2.setBounds(200, 50, 130, 23);
 
         jCheckBox1.setText("Планшет");
         jCheckBox1.addActionListener(new java.awt.event.ActionListener() {
@@ -72,9 +72,9 @@ public class Form1 extends javax.swing.JFrame {
             }
         });
         getContentPane().add(jCheckBox1);
-        jCheckBox1.setBounds(200, 30, 97, 20);
+        jCheckBox1.setBounds(200, 30, 140, 20);
 
-        jPanel2.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "jList"));
+        jPanel2.setBorder(javax.swing.BorderFactory.createTitledBorder("jList"));
         jPanel2.setLayout(null);
 
         jList1.setModel(new javax.swing.AbstractListModel() {
@@ -92,7 +92,7 @@ public class Form1 extends javax.swing.JFrame {
         jScrollPane1.setViewportView(jList1);
 
         jPanel2.add(jScrollPane1);
-        jScrollPane1.setBounds(10, 20, 131, 100);
+        jScrollPane1.setBounds(10, 20, 131, 120);
 
         getContentPane().add(jPanel2);
         jPanel2.setBounds(20, 70, 150, 130);
@@ -135,7 +135,7 @@ public class Form1 extends javax.swing.JFrame {
         jRadioButton3.setBounds(10, 60, 100, 23);
 
         getContentPane().add(jPanel3);
-        jPanel3.setBounds(190, 110, 180, 90);
+        jPanel3.setBounds(190, 110, 240, 90);
 
         jPanel4.setBorder(javax.swing.BorderFactory.createTitledBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED), "jCheckBox"));
 
@@ -143,15 +143,15 @@ public class Form1 extends javax.swing.JFrame {
         jPanel4.setLayout(jPanel4Layout);
         jPanel4Layout.setHorizontalGroup(
             jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 168, Short.MAX_VALUE)
+            .addGap(0, 208, Short.MAX_VALUE)
         );
         jPanel4Layout.setVerticalGroup(
             jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 68, Short.MAX_VALUE)
+            .addGap(0, 63, Short.MAX_VALUE)
         );
 
         getContentPane().add(jPanel4);
-        jPanel4.setBounds(180, 10, 180, 90);
+        jPanel4.setBounds(180, 10, 220, 90);
 
         jPanel5.setBorder(javax.swing.BorderFactory.createTitledBorder(javax.swing.BorderFactory.createTitledBorder("jComboBox"), "jComboBox"));
         jPanel5.setLayout(null);
@@ -163,7 +163,7 @@ public class Form1 extends javax.swing.JFrame {
             }
         });
         jPanel5.add(jComboBox2);
-        jComboBox2.setBounds(10, 20, 120, 20);
+        jComboBox2.setBounds(10, 20, 120, 25);
 
         getContentPane().add(jPanel5);
         jPanel5.setBounds(20, 10, 140, 50);
@@ -171,22 +171,7 @@ public class Form1 extends javax.swing.JFrame {
         jTextField1.setEditable(false);
         jTextField1.setText("<Выберите значение>");
         getContentPane().add(jTextField1);
-        jTextField1.setBounds(30, 210, 150, 20);
-
-        jScrollBar1.setOrientation(javax.swing.JScrollBar.HORIZONTAL);
-        jScrollBar1.setValue(50);
-        jScrollBar1.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-        jScrollBar1.addAdjustmentListener(new java.awt.event.AdjustmentListener() {
-            public void adjustmentValueChanged(java.awt.event.AdjustmentEvent evt) {
-                jScrollBar1_adjustmentValueChanged(evt);
-            }
-        });
-        getContentPane().add(jScrollBar1);
-        jScrollBar1.setBounds(40, 330, 300, 20);
-
-        jLabel2.setText("jScroolBar");
-        getContentPane().add(jLabel2);
-        jLabel2.setBounds(360, 330, 60, 14);
+        jTextField1.setBounds(30, 230, 230, 25);
 
         jPanel1.setBorder(javax.swing.BorderFactory.createCompoundBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED), javax.swing.BorderFactory.createEtchedBorder()));
         jPanel1.setLayout(null);
@@ -194,7 +179,7 @@ public class Form1 extends javax.swing.JFrame {
         jProgressBar1.setValue(50);
         jProgressBar1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         jPanel1.add(jProgressBar1);
-        jProgressBar1.setBounds(10, 110, 310, 21);
+        jProgressBar1.setBounds(10, 110, 310, 20);
 
         jSlider1.setMajorTickSpacing(10);
         jSlider1.setMinorTickSpacing(5);
@@ -211,14 +196,29 @@ public class Form1 extends javax.swing.JFrame {
 
         jLabel3.setText("jProgressBar");
         jPanel1.add(jLabel3);
-        jLabel3.setBounds(330, 110, 80, 14);
+        jLabel3.setBounds(340, 110, 120, 19);
 
         jLabel1.setText("jSlider");
         jPanel1.add(jLabel1);
-        jLabel1.setBounds(350, 30, 29, 14);
+        jLabel1.setBounds(350, 30, 90, 19);
+
+        jLabel2.setText("jScroolBar");
+        jPanel1.add(jLabel2);
+        jLabel2.setBounds(350, 80, 100, 19);
+
+        jScrollBar1.setOrientation(javax.swing.JScrollBar.HORIZONTAL);
+        jScrollBar1.setValue(50);
+        jScrollBar1.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        jScrollBar1.addAdjustmentListener(new java.awt.event.AdjustmentListener() {
+            public void adjustmentValueChanged(java.awt.event.AdjustmentEvent evt) {
+                jScrollBar1_adjustmentValueChanged(evt);
+            }
+        });
+        jPanel1.add(jScrollBar1);
+        jScrollBar1.setBounds(10, 80, 320, 20);
 
         getContentPane().add(jPanel1);
-        jPanel1.setBounds(30, 250, 420, 150);
+        jPanel1.setBounds(30, 280, 470, 150);
 
         jTextArea1.setColumns(20);
         jTextArea1.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
@@ -227,7 +227,7 @@ public class Form1 extends javax.swing.JFrame {
         jScrollPane2.setViewportView(jTextArea1);
 
         getContentPane().add(jScrollPane2);
-        jScrollPane2.setBounds(390, 10, 160, 120);
+        jScrollPane2.setBounds(450, 20, 220, 120);
 
         jButton1.setText("Выбранная строка");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
@@ -236,7 +236,7 @@ public class Form1 extends javax.swing.JFrame {
             }
         });
         getContentPane().add(jButton1);
-        jButton1.setBounds(410, 140, 130, 23);
+        jButton1.setBounds(470, 150, 180, 25);
 
         jButton2.setText("Свои строки");
         jButton2.addActionListener(new java.awt.event.ActionListener() {
@@ -245,7 +245,7 @@ public class Form1 extends javax.swing.JFrame {
             }
         });
         getContentPane().add(jButton2);
-        jButton2.setBounds(410, 170, 130, 23);
+        jButton2.setBounds(470, 190, 180, 25);
 
         jButton3.setText("Проход по строкам");
         jButton3.addActionListener(new java.awt.event.ActionListener() {
@@ -254,7 +254,7 @@ public class Form1 extends javax.swing.JFrame {
             }
         });
         getContentPane().add(jButton3);
-        jButton3.setBounds(410, 200, 130, 23);
+        jButton3.setBounds(470, 230, 180, 25);
 
         jButton4.setText("Выход");
         jButton4.addActionListener(new java.awt.event.ActionListener() {
@@ -263,9 +263,9 @@ public class Form1 extends javax.swing.JFrame {
             }
         });
         getContentPane().add(jButton4);
-        jButton4.setBounds(490, 350, 65, 23);
+        jButton4.setBounds(530, 380, 130, 40);
 
-        setSize(new java.awt.Dimension(593, 434));
+        setSize(new java.awt.Dimension(695, 475));
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 

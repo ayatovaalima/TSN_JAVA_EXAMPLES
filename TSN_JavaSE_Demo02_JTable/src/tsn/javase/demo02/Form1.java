@@ -68,7 +68,7 @@ public class Form1 extends javax.swing.JFrame {
             }
         });
         getContentPane().add(jButton1);
-        jButton1.setBounds(234, 11, 121, 23);
+        jButton1.setBounds(234, 11, 170, 25);
 
         jButton2.setText("Сумма цифр");
         jButton2.addActionListener(new java.awt.event.ActionListener() {
@@ -77,14 +77,14 @@ public class Form1 extends javax.swing.JFrame {
             }
         });
         getContentPane().add(jButton2);
-        jButton2.setBounds(234, 52, 120, 23);
+        jButton2.setBounds(234, 52, 170, 25);
 
         jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel1.setText("jLabel1");
         getContentPane().add(jLabel1);
-        jLabel1.setBounds(234, 81, 110, 14);
+        jLabel1.setBounds(240, 90, 160, 19);
 
-        setSize(new java.awt.Dimension(376, 155));
+        setSize(new java.awt.Dimension(430, 155));
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 

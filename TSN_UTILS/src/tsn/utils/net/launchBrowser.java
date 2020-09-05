@@ -4,6 +4,8 @@ import java.awt.Desktop;
 import java.io.IOException;
 import java.net.URI;
 import java.net.URISyntaxException;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
 /**
  * Запуск браузера
@@ -22,15 +24,24 @@ public class launchBrowser {
         new Thread(new Runnable() {
             @Override
             public void run() {
-                Desktop desktop;
-                if (Desktop.isDesktopSupported()) {
-                    desktop = Desktop.getDesktop();
-                    if (desktop.isSupported(Desktop.Action.BROWSE)) {
-                        URI uri;
-                        try {
-                            uri = new URI(uriStr);
-                            desktop.browse(uri);
-                        } catch (IOException | URISyntaxException e) {
+
+                if (System.getProperty("os.name").equals("Linux")
+                        && System.getProperty("java.vendor").startsWith("Red Hat")) {
+                    try {
+                        new ProcessBuilder("xdg-open", uriStr).start();
+                    } catch (IOException ex) {
+                    }
+                } else {
+                    Desktop desktop;
+                    if (Desktop.isDesktopSupported()) {
+                        desktop = Desktop.getDesktop();
+                        if (desktop.isSupported(Desktop.Action.BROWSE)) {
+                            URI uri;
+                            try {
+                                uri = new URI(uriStr);
+                                desktop.browse(uri);
+                            } catch (IOException | URISyntaxException e) {
+                            }
                         }
                     }
                 }

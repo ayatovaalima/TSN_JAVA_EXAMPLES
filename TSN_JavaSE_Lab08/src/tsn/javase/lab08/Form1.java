@@ -209,7 +209,7 @@ public class Form1 extends javax.swing.JFrame {
 
         jLabel_Track.setIcon(new javax.swing.ImageIcon(getClass().getResource("/tsn/javase/lab08/track.png"))); // NOI18N
         getContentPane().add(jLabel_Track);
-        jLabel_Track.setBounds(0, 0, 690, 519);
+        jLabel_Track.setBounds(0, 0, 700, 519);
 
         jButton_Start.setText("Старт");
         jButton_Start.addActionListener(new java.awt.event.ActionListener() {
@@ -250,7 +250,7 @@ public class Form1 extends javax.swing.JFrame {
         getContentPane().add(jLabel1);
         jLabel1.setBounds(0, 520, 740, 90);
 
-        setSize(new java.awt.Dimension(698, 639));
+        setSize(new java.awt.Dimension(698, 646));
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 

@@ -34,35 +34,35 @@ public class Form1 extends javax.swing.JFrame {
             }
         });
         getContentPane().add(jButton1);
-        jButton1.setBounds(239, 58, 110, 23);
+        jButton1.setBounds(239, 58, 150, 50);
 
         jLabel1.setText("a=");
         getContentPane().add(jLabel1);
-        jLabel1.setBounds(30, 20, 40, 14);
+        jLabel1.setBounds(30, 20, 40, 19);
 
         jLabel2.setText("b=");
         getContentPane().add(jLabel2);
-        jLabel2.setBounds(190, 20, 30, 14);
+        jLabel2.setBounds(190, 20, 30, 19);
 
         jLabel3.setText("c = a / b :");
         getContentPane().add(jLabel3);
-        jLabel3.setBounds(14, 62, 70, 14);
+        jLabel3.setBounds(14, 62, 70, 19);
         getContentPane().add(jTextField1);
-        jTextField1.setBounds(72, 20, 102, 20);
+        jTextField1.setBounds(94, 20, 80, 25);
         getContentPane().add(jTextField2);
-        jTextField2.setBounds(225, 20, 102, 20);
+        jTextField2.setBounds(225, 20, 100, 25);
 
-        jTextField3.setBackground(new java.awt.Color(204, 204, 204));
         jTextField3.setEditable(false);
+        jTextField3.setBackground(new java.awt.Color(204, 204, 204));
         getContentPane().add(jTextField3);
-        jTextField3.setBounds(89, 59, 140, 20);
+        jTextField3.setBounds(89, 59, 130, 25);
 
         jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/tsn/javase/demo01/logo.jpg"))); // NOI18N
-        jLabel4.setText("Талипов С.Н. (с), ИнЕУ, 2013 г. ");
+        jLabel4.setText("Талипов С.Н. (с), ИнЕУ-ToU, 2013-2022 г. ");
         getContentPane().add(jLabel4);
-        jLabel4.setBounds(57, 99, 360, 90);
+        jLabel4.setBounds(10, 110, 400, 90);
 
-        setSize(new java.awt.Dimension(430, 239));
+        setSize(new java.awt.Dimension(430, 251));
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 

@@ -116,7 +116,7 @@ public class Form1 extends javax.swing.JFrame {
         getContentPane().add(jPanel1);
         jPanel1.setBounds(0, 0, 290, 240);
 
-        setSize(new java.awt.Dimension(296, 320));
+        setSize(new java.awt.Dimension(288, 325));
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
