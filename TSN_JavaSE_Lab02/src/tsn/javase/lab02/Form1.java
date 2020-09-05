@@ -24,10 +24,6 @@ public class Form1 extends javax.swing.JFrame {
         jButton2 = new javax.swing.JButton();
         jButton3 = new javax.swing.JButton();
         jLabel5 = new javax.swing.JLabel();
-        jMenuBar1 = new javax.swing.JMenuBar();
-        jMenu1 = new javax.swing.JMenu();
-        jMenu2 = new javax.swing.JMenu();
-        jMenu3 = new javax.swing.JMenu();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Создание простейшей визуальной программы на  JAVA ");
@@ -37,22 +33,22 @@ public class Form1 extends javax.swing.JFrame {
 
         jLabel1.setText("B");
         getContentPane().add(jLabel1);
-        jLabel1.setBounds(10, 50, 20, 19);
+        jLabel1.setBounds(10, 50, 20, 16);
 
         jLabel2.setText("D");
         getContentPane().add(jLabel2);
-        jLabel2.setBounds(10, 80, 20, 19);
+        jLabel2.setBounds(10, 80, 20, 16);
 
         jLabel3.setText("X");
         jLabel3.setToolTipText("");
         getContentPane().add(jLabel3);
-        jLabel3.setBounds(10, 20, 20, 19);
+        jLabel3.setBounds(10, 20, 20, 16);
         getContentPane().add(jTextField1);
-        jTextField1.setBounds(40, 20, 59, 31);
+        jTextField1.setBounds(40, 20, 59, 22);
         getContentPane().add(jTextField2);
-        jTextField2.setBounds(40, 50, 59, 31);
+        jTextField2.setBounds(40, 50, 59, 22);
         getContentPane().add(jTextField3);
-        jTextField3.setBounds(40, 80, 59, 31);
+        jTextField3.setBounds(40, 80, 59, 22);
 
         jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/tsn/javase/lab02/variant.jpg"))); // NOI18N
         getContentPane().add(jLabel4);
@@ -87,35 +83,9 @@ public class Form1 extends javax.swing.JFrame {
 
         jLabel5.setText("ОТВЕТ:");
         getContentPane().add(jLabel5);
-        jLabel5.setBounds(30, 160, 450, 19);
+        jLabel5.setBounds(30, 160, 450, 16);
 
-        jMenu1.setText("Решить");
-        jMenu1.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                jMenu1MouseClicked(evt);
-            }
-        });
-        jMenuBar1.add(jMenu1);
-
-        jMenu2.setText("Очистить");
-        jMenu2.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                jMenu2MouseClicked(evt);
-            }
-        });
-        jMenuBar1.add(jMenu2);
-
-        jMenu3.setText("ВЫХОД");
-        jMenu3.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                jMenu3MouseClicked(evt);
-            }
-        });
-        jMenuBar1.add(jMenu3);
-
-        setJMenuBar(jMenuBar1);
-
-        setSize(new java.awt.Dimension(524, 234));
+        setSize(new java.awt.Dimension(524, 239));
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
@@ -128,10 +98,9 @@ public class Form1 extends javax.swing.JFrame {
             b = Float.parseFloat(jTextField2.getText()); // Получение данных
             d = Float.parseFloat(jTextField3.getText()); // Получение данных
         } catch (Exception ex) {
-            Toolkit.getDefaultToolkit().beep(); // Издаем звук
             // Выводим окошко с сообщением об ошибке
-            JOptionPane.showMessageDialog(rootPane, "Ошибка введенных данных!", "Ошибка ввода",
-                    JOptionPane.ERROR_MESSAGE);
+            JOptionPane.showMessageDialog(rootPane, "Ошибка введенных данных!", 
+                    "Ошибка ввода", JOptionPane.ERROR_MESSAGE);
             jTextField1.requestFocus(); // Устанавливаем фокус на компонент
             jLabel5.setText("В введенных значениях допущены ошибки");
             jTextField1.setText(""); // Очистка данных
@@ -161,21 +130,6 @@ public class Form1 extends javax.swing.JFrame {
         jTextField2.setText("");
         jTextField3.setText("");
     }//GEN-LAST:event_jButton2ActionPerformed
-
-    private void jMenu3MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jMenu3MouseClicked
-        // TODO add your handling code here:
-        jButton1ActionPerformed(null);
-    }//GEN-LAST:event_jMenu3MouseClicked
-
-    private void jMenu2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jMenu2MouseClicked
-        // Меню вызова очистки полей ввода
-        jButton2ActionPerformed(null);
-    }//GEN-LAST:event_jMenu2MouseClicked
-
-    private void jMenu1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jMenu1MouseClicked
-        // Меню вызова решения примера
-        jButton3ActionPerformed(null);
-    }//GEN-LAST:event_jMenu1MouseClicked
 
     public static void main(String args[]) {
         /* Set the Nimbus look and feel */
@@ -217,10 +171,6 @@ public class Form1 extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
-    private javax.swing.JMenu jMenu1;
-    private javax.swing.JMenu jMenu2;
-    private javax.swing.JMenu jMenu3;
-    private javax.swing.JMenuBar jMenuBar1;
     private javax.swing.JTextField jTextField1;
     private javax.swing.JTextField jTextField2;
     private javax.swing.JTextField jTextField3;

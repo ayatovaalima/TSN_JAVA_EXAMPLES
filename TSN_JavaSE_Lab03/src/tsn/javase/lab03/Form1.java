@@ -20,7 +20,7 @@ public class Form1 extends javax.swing.JFrame {
         jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setTitle("Работа с визуальными табличными данными в JAVA");
+        setTitle("Работа с визуальными табл. данными в JAVA");
         setIconImage(java.awt.Toolkit.getDefaultToolkit().createImage(getClass().getResource("icon.png")));
         setResizable(false);
         getContentPane().setLayout(null);
@@ -54,7 +54,7 @@ public class Form1 extends javax.swing.JFrame {
         }
 
         getContentPane().add(jScrollPane1);
-        jScrollPane1.setBounds(0, 0, 250, 70);
+        jScrollPane1.setBounds(20, 10, 250, 70);
 
         jButton1.setText("Заполнить случ. числами");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
@@ -63,7 +63,7 @@ public class Form1 extends javax.swing.JFrame {
             }
         });
         getContentPane().add(jButton1);
-        jButton1.setBounds(260, 0, 220, 33);
+        jButton1.setBounds(280, 10, 200, 25);
 
         jButton2.setText("Выполнить задание");
         jButton2.addActionListener(new java.awt.event.ActionListener() {
@@ -72,7 +72,7 @@ public class Form1 extends javax.swing.JFrame {
             }
         });
         getContentPane().add(jButton2);
-        jButton2.setBounds(260, 40, 220, 33);
+        jButton2.setBounds(280, 50, 200, 25);
 
         jLabel_MAX.setBackground(new java.awt.Color(255, 255, 255));
         jLabel_MAX.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
@@ -82,16 +82,16 @@ public class Form1 extends javax.swing.JFrame {
         jLabel_MAX.setName(""); // NOI18N
         jLabel_MAX.setOpaque(true);
         getContentPane().add(jLabel_MAX);
-        jLabel_MAX.setBounds(-10, 80, 470, 20);
+        jLabel_MAX.setBounds(20, 90, 460, 20);
 
         jLabel1.setBackground(new java.awt.Color(255, 255, 255));
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/tsn/javase/lab03/lab.png"))); // NOI18N
         jLabel1.setVerticalAlignment(javax.swing.SwingConstants.BOTTOM);
         jLabel1.setOpaque(true);
         getContentPane().add(jLabel1);
-        jLabel1.setBounds(0, 80, 460, 90);
+        jLabel1.setBounds(20, 110, 460, 70);
 
-        setSize(new java.awt.Dimension(508, 201));
+        setSize(new java.awt.Dimension(518, 226));
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
@@ -112,7 +112,8 @@ public class Form1 extends javax.swing.JFrame {
             for (int j = 0; j < jTable1.getColumnCount(); j++) {
                 if (jTable1.getValueAt(i, j) == null) {
                     JOptionPane.showMessageDialog(rootPane,
-                            "Проверьте правильность заполнения таблицы", "Ошибка ввода", JOptionPane.ERROR_MESSAGE);
+                            "Проверьте правильность заполнения таблицы", "Ошибка ввода",
+                            JOptionPane.ERROR_MESSAGE);
                     return;
                 }
             }
@@ -137,6 +138,7 @@ public class Form1 extends javax.swing.JFrame {
                     break;
                 }
                 sum += Integer.parseInt(jTable1.getValueAt(i, j).toString());
+               // jTable1.setValueAt(-1, i, j);
             }
         }
 
@@ -148,7 +150,8 @@ public class Form1 extends javax.swing.JFrame {
             }
         }
 
-        jLabel_MAX.setText("Максимальный элемент - " + max + " [" + (maxI + 1) + "," + (maxJ + 1) + "] Cумма - " + sum);
+        jLabel_MAX.setText("Максимальный элемент: " + max + 
+                " [" + (maxI + 1) + "," + (maxJ + 1) + "] Cумма: " + sum);
     }//GEN-LAST:event_jButton2ActionPerformed
 
     /**
