@@ -64,11 +64,11 @@ public class Form1 extends javax.swing.JFrame {
 
         jLabel1.setText("Список именинников:");
         getContentPane().add(jLabel1);
-        jLabel1.setBounds(10, 10, 240, 19);
+        jLabel1.setBounds(10, 10, 240, 16);
 
         jLabel2.setText("Перечень благ:");
         getContentPane().add(jLabel2);
-        jLabel2.setBounds(340, 10, 200, 19);
+        jLabel2.setBounds(340, 10, 200, 16);
 
         jButton_Pazdr.setText("Поздравить");
         jButton_Pazdr.addActionListener(new java.awt.event.ActionListener() {
@@ -77,7 +77,7 @@ public class Form1 extends javax.swing.JFrame {
             }
         });
         getContentPane().add(jButton_Pazdr);
-        jButton_Pazdr.setBounds(560, 540, 170, 33);
+        jButton_Pazdr.setBounds(560, 540, 170, 25);
 
         jButton_Fam_Clear.setText("Очистка");
         jButton_Fam_Clear.addActionListener(new java.awt.event.ActionListener() {
@@ -86,7 +86,7 @@ public class Form1 extends javax.swing.JFrame {
             }
         });
         getContentPane().add(jButton_Fam_Clear);
-        jButton_Fam_Clear.setBounds(191, 220, 140, 33);
+        jButton_Fam_Clear.setBounds(191, 220, 140, 25);
 
         jButton_Gel_Clear.setText("Очистка");
         jButton_Gel_Clear.setToolTipText("");
@@ -96,7 +96,7 @@ public class Form1 extends javax.swing.JFrame {
             }
         });
         getContentPane().add(jButton_Gel_Clear);
-        jButton_Gel_Clear.setBounds(591, 220, 130, 33);
+        jButton_Gel_Clear.setBounds(591, 220, 130, 25);
 
         jEditorPane_Pozdr.setEditable(false);
         jEditorPane_Pozdr.setBackground(new java.awt.Color(255, 255, 153));
@@ -108,7 +108,7 @@ public class Form1 extends javax.swing.JFrame {
         getContentPane().add(jScrollPane4);
         jScrollPane4.setBounds(10, 260, 720, 270);
 
-        setSize(new java.awt.Dimension(746, 603));
+        setSize(new java.awt.Dimension(762, 618));
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
@@ -119,36 +119,42 @@ public class Form1 extends javax.swing.JFrame {
         
         jEditorPane_Pozdr.setText(null); // Очищаем область поздравлений
         
+        // Заполнение массива пожеланий
         try { // Проверка введенных пользователем пожеланий
             for (int i = 0; i < jTextArea_Gel.getLineCount(); i++) {
-                int end = jTextArea_Gel.getLineEndOffset(i);
                 int start = jTextArea_Gel.getLineStartOffset(i);
-                // Проверяем является ли строки пустой ("==" - не работает)
-                if (jTextArea_Gel.getText(start, end - start).trim().equals("")) { continue; }
+                int end = jTextArea_Gel.getLineEndOffset(i);
+                // Проверяем является ли строка пустой ("==" - не работает)
+                String line = jTextArea_Gel.getText(start, end - start).trim();
+                if (line.equals("")) { continue; }
                 // Добавление поздравления в массив
-                pozdr.add(jTextArea_Gel.getText(start, end - start).trim()); 
+                pozdr.add(line); 
             }
         } catch (Exception ex) { JOptionPane.showMessageDialog(rootPane, "Ошибка чтения пожеланий", 
-                "Ошибка чтения", JOptionPane.ERROR_MESSAGE);
+                "Ошибка данных", JOptionPane.ERROR_MESSAGE);
             return; // Выход
         }
         
+        // Заполнение массива персон
         try { // Проверка введенных пользователем фамилий
             for (int i = 0; i < jTextArea_Fam.getLineCount(); i++) {
-                int end = jTextArea_Fam.getLineEndOffset(i);
                 int start = jTextArea_Fam.getLineStartOffset(i);
-                // Проверяем является ли строки пустой (== - не работает)
-                if (jTextArea_Fam.getText(start, end - start).trim().equals("")) { continue; }
-                fam.add(jTextArea_Fam.getText(start, end - start).trim()); // добавление фамилии в массив
+                int end = jTextArea_Fam.getLineEndOffset(i);
+                // Проверяем является ли строка пустой (== - не работает)
+                String line = jTextArea_Fam.getText(start, end - start).trim();
+                if (line.equals("")) { continue; }
+                fam.add(line); // добавление фамилии в массив
             }
         } catch (Exception ex) { JOptionPane.showMessageDialog(rootPane, "Ошибка чтения фамилий", 
-                "Ошибка чтения", JOptionPane.ERROR_MESSAGE);
+                "Ошибка данных", JOptionPane.ERROR_MESSAGE);
             return; // Выход
         }
 
         // Проверка количества поздравлений
         if (fam.size() > pozdr.size()) { // Если фамилий больше чем поздравлений
-            JOptionPane.showMessageDialog(rootPane, "Пожеланий на всех не хватит! Уменьшите количество фамилий.", "Ошибка ввода", JOptionPane.ERROR_MESSAGE);
+            JOptionPane.showMessageDialog(rootPane, 
+                    "Пожеланий на всех не хватит! Уменьшите количество фамилий.", 
+                    "Ошибка ввода", JOptionPane.ERROR_MESSAGE);
             return;
         }
 
@@ -157,8 +163,7 @@ public class Form1 extends javax.swing.JFrame {
             for (int i = 0; i < fam.size(); i++) {
                 // Генерируем случайное число в диапазоне от 0 до длины массива поздравлений
                 int p = (int) Math.floor(Math.random() * pozdr.size()); 
-                // Генерация поздравления
-                
+                // Генерация поздравления            
                 s.append("Уважаемый <font color=\"990505\">" + fam.get(i)+"</font>"
                         + "! Желаем Вам " + 
                         pozdr.get(p).toString().toLowerCase() + "!<br>");  //добавляем символ перехода на новую строку
