@@ -119,6 +119,21 @@ public class Form1 extends javax.swing.JFrame {
         
         jEditorPane_Pozdr.setText(null); // Очищаем область поздравлений
         
+        // Заполнение массива персон
+        try { // Проверка введенных пользователем фамилий
+            for (int i = 0; i < jTextArea_Fam.getLineCount(); i++) {
+                int start = jTextArea_Fam.getLineStartOffset(i);
+                int end = jTextArea_Fam.getLineEndOffset(i);
+                // Проверяем является ли строка пустой (== - не работает)
+                String line = jTextArea_Fam.getText(start, end - start).trim();
+                if (line.equals("")) { continue; }
+                fam.add(line); // добавление фамилии в массив
+            }
+        } catch (Exception ex) { JOptionPane.showMessageDialog(rootPane, "Ошибка чтения фамилий", 
+                "Ошибка данных", JOptionPane.ERROR_MESSAGE);
+            return; // Выход
+        }
+
         // Заполнение массива пожеланий
         try { // Проверка введенных пользователем пожеланий
             for (int i = 0; i < jTextArea_Gel.getLineCount(); i++) {
@@ -135,21 +150,6 @@ public class Form1 extends javax.swing.JFrame {
             return; // Выход
         }
         
-        // Заполнение массива персон
-        try { // Проверка введенных пользователем фамилий
-            for (int i = 0; i < jTextArea_Fam.getLineCount(); i++) {
-                int start = jTextArea_Fam.getLineStartOffset(i);
-                int end = jTextArea_Fam.getLineEndOffset(i);
-                // Проверяем является ли строка пустой (== - не работает)
-                String line = jTextArea_Fam.getText(start, end - start).trim();
-                if (line.equals("")) { continue; }
-                fam.add(line); // добавление фамилии в массив
-            }
-        } catch (Exception ex) { JOptionPane.showMessageDialog(rootPane, "Ошибка чтения фамилий", 
-                "Ошибка данных", JOptionPane.ERROR_MESSAGE);
-            return; // Выход
-        }
-
         // Проверка количества поздравлений
         if (fam.size() > pozdr.size()) { // Если фамилий больше чем поздравлений
             JOptionPane.showMessageDialog(rootPane, 
@@ -159,7 +159,7 @@ public class Form1 extends javax.swing.JFrame {
         }
 
         StringBuilder s = new StringBuilder("<p align=\"center\"><cite><b><font size=\"5\">");
-        try { // ПОЗДРАВЛЯЕМ !!!
+        try { // ПОЗДРАВЛЯЕМ ВСЕХ ПЕРСОН !!!
             for (int i = 0; i < fam.size(); i++) {
                 // Генерируем случайное число в диапазоне от 0 до длины массива поздравлений
                 int p = (int) Math.floor(Math.random() * pozdr.size()); 
